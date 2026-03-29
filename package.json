@@ -1,0 +1,17 @@
+{
+  "name": "aws-playwright-pipeline",
+  "version": "1.0.0",
+  "description": "Playwright tests with AWS S3 report upload and GitHub Actions CI",
+  "scripts": {
+    "test": "playwright test",
+    "upload": "node scripts/upload-report.js"
+  },
+  "author": "Darrius Jones",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@aws-sdk/client-s3": "^3.0.0",
+    "dotenv": "^16.0.0",
+    "typescript": "^5.0.0"
+  }
+}
